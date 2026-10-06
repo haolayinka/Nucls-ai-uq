@@ -1,0 +1,24 @@
+Section,Quantity,Numerator,Denominator,Percent
+Empirical frame,Selected anchors,1144,,
+Empirical frame,AI-positive anchors,593,1144.0,51.83566433566433
+Empirical frame,AI-negative anchors,551,1144.0,48.16433566433567
+Empirical frame,Fields of view,52,,
+Empirical frame,Slides,5,,
+Empirical frame,Patients,5,,
+Empirical frame,Primary readers,5,,
+Empirical frame,Potential reader-anchor-condition observations,11440,,
+Empirical frame,Observed reader-anchor-condition observations,10833,11440.0,94.69405594405595
+Empirical frame,Unobserved because reader did not annotate FOV,607,11440.0,5.305944055944056
+Missingness,Evaluation: unobserved,516,5720.0,9.020979020979022
+Missingness,"Evaluation, AI negative: unobserved",271,2755.0,9.836660617059891
+Missingness,"Evaluation, AI positive: unobserved",245,2965.0,8.263069139966273
+Missingness,Unbiased: unobserved,91,5720.0,1.5909090909090908
+Missingness,"Unbiased, AI negative: unobserved",80,2755.0,2.9038112522686026
+Missingness,"Unbiased, AI positive: unobserved",11,2965.0,0.37099494097807756
+Paired support,Potential reader-anchor pairs,5720,,
+Paired support,Observed in both conditions,5188,5720.0,90.6993006993007
+Paired support,Agreement in both conditions,2326,5188.0,44.83423284502698
+Paired support,Agreement in neither condition,1844,5188.0,35.54356206630686
+Paired support,Agreement in Evaluation only,515,5188.0,9.926754047802621
+Paired support,Agreement in Unbiased only,503,5188.0,9.695451040863531
+Paired support,Condition-switching observations,1018,5188.0,19.622205088666153

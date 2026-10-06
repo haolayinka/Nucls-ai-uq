@@ -1,0 +1,16 @@
+label,group,type,estimate,ci_low,ci_high,range_low,range_high,envelope_low,envelope_high
+Raw observed agreement (M0),Benchmark,point,0.0006378246832826617,,,,,,
+"iMRMC conditional-D (1,144 anchors)",Benchmark,interval,0.0006378246832826,-0.0225036279857622,0.0237792773523275,,,,
+"iMRMC joint-D (1,144 anchors)",Benchmark,interval,0.0006378246832826,-0.0239361951835852,0.0252118445501505,,,,
+iMRMC fully crossed (679 anchors),Benchmark,interval,0.0023564064801178,-0.0140496861328345,0.0187624990930702,,,,
+M1 reader-only,Bayesian primary,interval,-0.0008047177711485,-0.0032606470669595,0.0008029370476328,,,,
+M2 shared-detectability,Bayesian primary,interval,-6.691046491625358e-06,-0.0140215914549077,0.0127109120456055,,,,
+M2 + slide hierarchy,Bayesian primary,interval,-4.305021442031741e-05,-0.0139276498899403,0.0126140669388262,,,,
+LOSO M2: drop one slide,Composition sensitivity,sensitivity_range,,,,-0.0061905928853997,0.0066228843932518,-0.0289957472995661,0.0355548123370288
+"M4 residual dependence: gamma [-2,2]",Structural sensitivity,sensitivity_range,,,,-0.0110859465544106,0.0101037030218846,-0.0523803622410933,0.0512698368908004
+"Pattern mixture M1: gamma_mis [-2,2]",Missingness sensitivity,sensitivity_range,,,,-0.0034363856220471,-2.8456772555339895e-05,-0.006001357202244,0.0013591879287066
+"Pattern mixture M2: gamma_mis [-2,2]",Missingness sensitivity,sensitivity_range,,,,-0.0024480732199469,0.0012352900620184,-0.0153353131154063,0.0133682797882715
+"Future reader M1: rho [-0.9,0.9]",Future-reader sensitivity,sensitivity_range,,,,-0.0015733609779029,-0.0007307498548139,-0.0049699409667852,0.0021158170771352
+"Future reader M2: rho [-0.9,0.9]",Future-reader sensitivity,sensitivity_range,,,,-0.0007669000252146,-6.691046491625358e-06,-0.017306735247404,0.015074683933188
+"Future reader M1, no-new-anchor: rho sweep",Future-reader sensitivity,sensitivity_range,,,,-0.0012740099667739,-0.0004905123418569,-0.005236061501451,0.0033771553428263
+"Future reader M2, no-new-anchor: rho sweep",Future-reader sensitivity,sensitivity_range,,,,0.0020544502805913,0.0032832331698464,-0.0215527492584633,0.0256347494530109

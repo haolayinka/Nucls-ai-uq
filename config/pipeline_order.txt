@@ -1,0 +1,16 @@
+01 preprocessing: construct and validate the selected NuCLS analysis frame
+02 external_ai: fixed HoVer-Net inference on blinded field-of-view images
+03 scoring: restricted anchor matching and fixed-AI scoring
+04 descriptive: paired-reader and AI-status descriptive analyses
+05 imrmc: multireader benchmark analysis
+06 m2_primary: shared-detectability Bayesian analysis
+07 m1_reader_only: reader-only Bayesian analysis
+08 shared_detectability_cv: predictive cross-validation analysis
+09 prior_sensitivity: M2 prior sensitivity
+10 m4_sensitivity: residual-dependence sensitivity
+11 missingness_identification: missingness and identification diagnostics
+12 slide_hierarchy: slide-composition sensitivity
+13 future_reader: future-reader correlation sensitivity
+14 simulations: known-truth and frozen adversarial evaluations
+15 predictive_validation: target-aligned predictive validation
+16 publication: manuscript tables and figures

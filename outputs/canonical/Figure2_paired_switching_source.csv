@@ -1,0 +1,5 @@
+pair_agreement_state,count,proportion
+agree_both,2326,0.44834232845026983
+agree_neither,1844,0.3554356206630686
+evaluation_only_agrees,515,0.09926754047802622
+unbiased_only_agrees,503,0.09695451040863531

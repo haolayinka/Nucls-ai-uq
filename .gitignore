@@ -1,0 +1,38 @@
+# Official/raw data and large artifacts
+data/raw/**
+data/external/**
+checkpoints/*.tar
+checkpoints/*.pt
+checkpoints/*.pth
+*.nc
+
+# Recreated/temporary outputs
+data/interim/**
+outputs/diagnostics/*.nc
+slurm-*.out
+slurm-*.err
+*.out
+*.err
+
+# Environments/caches
+.venv/
+venv/
+env/
+environments/
+__pycache__/
+*.pyc
+.pytensor/
+.pytest_cache/
+
+# OS/editor
+.DS_Store
+
+# Machine-local/runtime-only inputs
+config/local_paths.env
+data/blinded/**
+data/reference_locked/**
+data/manifests/nucls_blinded_image_only_inference_SOURCE_EXPORT_REGISTERED_v8.csv
+outputs/v23_1_shared_detectability_cv
+
+# MCMC posterior serialization is not distributed
+*.nc

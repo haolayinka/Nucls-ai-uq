@@ -1,0 +1,11 @@
+scenario_id,scenario,n_candidates,n_patients,n_fovs,alpha_ai,beta_ai,alpha_reader,beta_reader,sigma_slide,sigma_reader,sigma_pair,gamma_eval,sigma_assist,selection_k,tau0,tau_d,coverage_profile
+0,baseline_nucls_like,5000,5,54,-1.04,1.2,1.7,1.0,0.35,0.4,1.6,-0.15,0.25,2,-0.4,1.2,nucls_like
+1,no_assistance_effect,5000,5,54,-1.04,1.2,1.7,1.0,0.35,0.4,1.6,0.0,0.0,2,-0.4,1.2,nucls_like
+2,strong_assistance_heterogeneity,5000,5,54,-1.04,1.2,1.7,1.0,0.35,0.4,1.6,-0.15,0.75,2,-0.4,1.2,nucls_like
+3,positive_mean_assistance,5000,5,54,-1.04,1.2,1.7,1.0,0.35,0.4,1.6,0.35,0.25,2,-0.4,1.2,nucls_like
+4,negative_mean_assistance,5000,5,54,-1.04,1.2,1.7,1.0,0.35,0.4,1.6,-0.5,0.25,2,-0.4,1.2,nucls_like
+5,noninformative_selection,5000,5,54,-1.04,1.2,1.7,1.0,0.35,0.4,1.6,-0.15,0.25,2,-0.1,0.0,nucls_like
+6,strong_informative_selection,5000,5,54,-1.04,1.2,1.7,1.0,0.35,0.4,1.6,-0.15,0.25,2,-0.6,2.0,nucls_like
+7,near_complete_fov_observation,5000,5,54,-1.04,1.2,1.7,1.0,0.35,0.4,1.6,-0.15,0.25,2,-0.4,1.2,near_complete
+8,severe_fov_missingness,5000,5,54,-1.04,1.2,1.7,1.0,0.35,0.4,1.6,-0.15,0.25,2,-0.4,1.2,severe
+9,larger_25_patient_design,10000,25,100,-1.04,1.2,1.7,1.0,0.35,0.4,1.6,-0.15,0.25,2,-0.4,1.2,nucls_like

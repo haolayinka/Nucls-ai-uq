@@ -1,0 +1,21 @@
+{
+  "claim_limit": "v7 exact byte identity validated; v5/v6 validated by frozen invariants/downstream semantics, not claimed byte-identical to lost historical files.",
+  "handoff_date": "2026-10-04",
+  "reconstructed_scripts": {
+    "src/preprocessing/01_build_selected_frame.py": {
+      "expected_reconstructed_sha256": "b856778347228be41c1f7547162089d71c3f3a238b7831be5fcbfc117b50eefa",
+      "starter_copy_sha256": "b856778347228be41c1f7547162089d71c3f3a238b7831be5fcbfc117b50eefa"
+    },
+    "src/preprocessing/02_build_blinded_manifest.py": {
+      "expected_reconstructed_sha256": "10b0f10e5dac1e60c2aa0e01175dd3e7a63c12da2813495a324d5be1a9366747",
+      "starter_copy_sha256": "10b0f10e5dac1e60c2aa0e01175dd3e7a63c12da2813495a324d5be1a9366747"
+    },
+    "src/preprocessing/03_validate_source_registration.py": {
+      "expected_reconstructed_sha256": "ef072a759c6b5ddd84418918d8219f0fb74b6c5f99da2067c22ad0f06316622c",
+      "starter_copy_sha256": "ef072a759c6b5ddd84418918d8219f0fb74b6c5f99da2067c22ad0f06316622c"
+    }
+  },
+  "source_handoff": "NuCLS_JMI_GITHUB_REPRODUCIBILITY_HANDOFF_COMPLETE_2026-10-04(1).md",
+  "v7_frozen_target_sha256": "54824104ef3f636a571319301387008b7e3b8b03f0ba429cd0d5c337e2276d3e",
+  "validation_target_bundle_sha256": "9a3ee8a3ddddb9f37ac167f34fad8de4f7c2bb41172de3fe6942404809d36035"
+}

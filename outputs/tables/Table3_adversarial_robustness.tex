@@ -1,0 +1,42 @@
+\begin{table*}[!htbp]
+\centering
+\scriptsize
+\caption{Adversarial misspecification summary for the reader-only (M1) and shared-detectability (M2) models. RMSE and bias are reported in percentage points; bracketed values are empirical 95\% interval coverage percentages. The stability ratio is $R={\mathrm{RMSE}(\Delta)}/[{\mathrm{RMSE}(\theta_U)+\mathrm{RMSE}(\theta_E)}/2]$. M4 is a prespecified residual-dependence sensitivity grid rather than an oracle-selected estimator; its column gives full-envelope truth containment for $\Delta$.}
+\label{tab:adversarial_robustness}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lllrccccc}
+\toprule
+Scenario & Departure challenged & Model & $n$ & $\theta_U$ RMSE [Cov.] & $\theta_E$ RMSE [Cov.] & $\Delta$ Bias / RMSE [Cov.] & $R$ & M4 $\Delta$ envelope \\
+\midrule
+A1 & Independent AI-specific item variation & M1 reader--only & 100 & 0.235 [98] & 0.254 [98] & +0.005 / 0.069 [99] & 0.282 & 100\% \\
+A1 & Independent AI-specific item variation & M2 shared--detectability & 99 & 0.462 [83] & 0.492 [84] & +0.025 / 0.080 [97] & 0.167 & 100\% \\
+\addlinespace[1.5pt]
+A2 & Correlated but nonidentical AI/human factors & M1 reader--only & 100 & 1.283 [3] & 1.365 [4] & -0.078 / 0.117 [75] & 0.088 & 100\% \\
+A2 & Correlated but nonidentical AI/human factors & M2 shared--detectability & 100 & 0.491 [93] & 0.523 [96] & +0.004 / 0.156 [99] & 0.309 & 100\% \\
+\addlinespace[1.5pt]
+A3 & Nonlinear/threshold AI response & M1 reader--only & 100 & 2.323 [0] & 2.517 [0] & -0.193 / 0.204 [32] & 0.084 & 100\% \\
+A3 & Nonlinear/threshold AI response & M2 shared--detectability & 100 & 0.369 [99] & 0.395 [96] & -0.066 / 0.170 [98] & 0.446 & 100\% \\
+\addlinespace[1.5pt]
+\textbf{A4} & \textbf{Condition-specific AI--human dependence} & M1 reader--only & 100 & 0.633 [63] & 3.062 [0] & \textbf{-2.484 / 2.496 [0]} & \textbf{1.351} & 94\% \\
+\textbf{A4} & \textbf{Condition-specific AI--human dependence} & M2 shared--detectability & 100 & 1.396 [21] & 1.085 [67] & \textbf{-2.271 / 2.288 [0]} & \textbf{1.845} & 94\% \\
+\addlinespace[1.5pt]
+A5 & Omitted slide/patient effect & M1 reader--only & 100 & 2.178 [16] & 2.356 [21] & -0.169 / 0.321 [80] & 0.142 & 100\% \\
+A5 & Omitted slide/patient effect & M2 shared--detectability & 100 & 0.498 [99] & 0.575 [99] & -0.058 / 0.350 [99] & 0.653 & 100\% \\
+\addlinespace[1.5pt]
+A6 & Informative FOV missingness & M1 reader--only & 100 & 2.237 [1] & 2.396 [2] & -0.156 / 0.201 [72] & 0.087 & 100\% \\
+A6 & Informative FOV missingness & M2 shared--detectability & 100 & 0.505 [99] & 0.556 [98] & -0.014 / 0.230 [96] & 0.434 & 100\% \\
+\addlinespace[1.5pt]
+A7 & Selection on AI/human positivity & M1 reader--only & 100 & 2.415 [0] & 2.580 [0] & -0.162 / 0.270 [95] & 0.108 & 100\% \\
+A7 & Selection on AI/human positivity & M2 shared--detectability & 100 & 0.421 [98] & 0.451 [99] & -0.052 / 0.137 [99] & 0.314 & 100\% \\
+\addlinespace[1.5pt]
+A8 & Mixture/heavy-tailed heterogeneity & M1 reader--only & 100 & 2.461 [0] & 2.623 [0] & -0.163 / 0.196 [70] & 0.077 & 100\% \\
+A8 & Mixture/heavy-tailed heterogeneity & M2 shared--detectability & 100 & 0.548 [95] & 0.549 [98] & -0.022 / 0.210 [99] & 0.384 & 100\% \\
+\bottomrule
+\end{tabular}%
+}
+\vspace{2pt}
+\begin{minipage}{0.99\textwidth}
+\footnotesize
+\textit{Note.} The prespecified comparative-stability gate required median $R\leq0.50$ across the 16 M1/M2 scenario cells and at least 12/16 cells with $R<1$. The observed median was 0.295, with 14/16 cells below 1; the paired-complete sensitivity also passed (median $R=0.296$, 14/16 below 1). A4 was the only scenario with $R\geq1$ for both M1 and M2, and both Bayesian $\Delta$ intervals had 0\% empirical coverage there. M2 A1 uses 99 valid replications because one prespecified computational failure remained after targeted retry. The table is a robustness-boundary summary, not a ranking of methods. Full bias, RMSE, interval-width, Monte Carlo standard-error, raw/iMRMC, and M4 grid results are retained for the supplement.
+\end{minipage}
+\end{table*}
