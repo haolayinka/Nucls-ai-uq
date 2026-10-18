@@ -1,0 +1,53 @@
+{
+  "study": "NuCLS v26.1 correct-specification calibration and design-support study",
+  "date": "2026-10-12",
+  "original_proposal": {
+    "replications_per_scenario": 200,
+    "datasets": 2400,
+    "bayesian_cross_fitting": "M1 and M2 proposed for every generated dataset"
+  },
+  "amended_primary_design": {
+    "replications_per_scenario": 100,
+    "replication_rule": "use frozen replications 000-099 in every scenario",
+    "datasets": 1200,
+    "generator_cells": 12,
+    "primary_bayesian_calibration": {
+      "M1-generated": "fit M1",
+      "M2-generated": "fit M2"
+    },
+    "primary_bayesian_fits": 1200,
+    "raw_agreement": "evaluate on all 1200 definitive datasets",
+    "iMRMC": "evaluate where generated design satisfies comparator requirements",
+    "cross_fitting": "M1-to-M2 and M2-to-M1 are secondary/supplemental structural comparisons, not required for the primary correct-specification calibration analysis. The existing A1-A8 battery remains the principal misspecification study."
+  },
+  "rationale": [
+    "match the 100-replication-per-scenario convention used in the completed A1-A8 adversarial battery",
+    "reduce computational burden while reporting Monte Carlo uncertainty",
+    "focus the new primary study on the methodological gap it was designed to fill: correct-specification calibration and design support"
+  ],
+  "timing_and_selection": "This amendment was fixed after dataset generation and engineering smoke testing but before definitive Bayesian calibration results were produced. Replications 100-199 remain archived and cannot replace failed replications 000-099.",
+  "primary_targets": [
+    "theta_U^S",
+    "theta_E^S",
+    "Delta^S"
+  ],
+  "performance_measures": [
+    "bias",
+    "RMSE",
+    "95% interval coverage",
+    "mean 95% interval width",
+    "Monte Carlo SE of bias",
+    "Monte Carlo SE of coverage",
+    "computational failure rate",
+    "diagnostic pass rate"
+  ],
+  "scientific_gates": {
+    "absolute_bias": "< 0.005",
+    "coverage": "0.92 to 0.98, interpreted with Monte Carlo SE",
+    "directional_bias": "no systematic directional bias with increasing reader/slide support",
+    "computational_failure_rate": "< 0.02",
+    "convergence": "same validated application-analysis gates"
+  },
+  "frozen_original_hash": "783c8539713f4c2c66d19571efd9e92094d5023ec5d481fd9bd0cd7ae422fd22",
+  "definitive_subset_hash": "49e45bc41916c001d5a5bac13ab79332461cc80005e845831b198b176da0dce6"
+}

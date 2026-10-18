@@ -1,0 +1,17 @@
+{
+  "protocol": "NuCLS-v26.1-correct-spec-calibration-2026-10-12",
+  "amendment": "definitive replication count",
+  "original_frozen_replications_per_scenario": 200,
+  "definitive_replications_per_scenario": 100,
+  "definitive_replication_rule": "replications 000-099 in every scenario",
+  "n_scenarios": 12,
+  "n_definitive_datasets": 1200,
+  "original_freeze_hash": "783c8539713f4c2c66d19571efd9e92094d5023ec5d481fd9bd0cd7ae422fd22",
+  "definitive_subset_hash": "49e45bc41916c001d5a5bac13ab79332461cc80005e845831b198b176da0dce6",
+  "rationale": [
+    "harmonize replication count with the completed A1-A8 adversarial simulation program",
+    "reduce computational burden while retaining Monte Carlo SE reporting"
+  ],
+  "timing": "Amendment made after frozen-data generation and engineering smoke testing, but before definitive simulation fitting and before bias/RMSE/coverage results were calculated.",
+  "failure_rule": "Replications 100-199 are archived and must not replace computational failures among replications 000-099."
+}

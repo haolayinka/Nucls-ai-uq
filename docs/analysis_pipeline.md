@@ -53,3 +53,17 @@ Official NuCLS source data
 
 - LOSO analyses are slide-composition sensitivity, not new-patient validation.
 
+## v26.1 correct-specification calibration branch
+
+A separate additional simulation branch uses 12 M1/M2 generating scenarios
+(5 or 10 readers; 5, 10, or 20 nominal slides), with 100 preselected
+replications each. For each of 1,200 datasets both M1 and M2 are fitted.
+The 1,200 matched-generator fits define the frozen primary calibration
+analysis; the 1,200 cross-model fits are secondary. The new branch proceeds
+through the v26.1 generator, frozen dataset checks, Bayesian inference,
+four-chain finalization, and replication-specific known-truth evaluation.
+It supplements the existing A1–A8 misspecification program. See
+`docs/v26_1_calibration_and_reproducibility.md` and
+`src/simulations/v26_1_*.py`. No institution-specific scheduler is required
+by the public documentation.
+

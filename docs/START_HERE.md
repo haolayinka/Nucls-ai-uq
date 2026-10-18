@@ -9,6 +9,8 @@ This repository contains the public reproducibility materials for the NuCLS path
 3. Read `docs/reproducibility_contract.md` for what is and is not expected to reproduce byte-for-byte.
 4. Read `data/README.md` and `checkpoints/README.md` before running analyses that require external NuCLS data or the fixed HoVer-Net checkpoint.
 
+5. Read `docs/v26_1_calibration_and_reproducibility.md` for the additional frozen correct-specification Bayesian calibration study and its distinctions from the A1–A8 misspecification analyses.
+
 ## Reproducibility principle
 
 The public repository contains portable scientific code and compact canonical publication artifacts. Institution-specific scheduler configuration, local filesystem paths, and cluster-administration details are intentionally excluded.

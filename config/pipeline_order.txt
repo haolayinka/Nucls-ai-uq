@@ -12,5 +12,6 @@
 12 slide_hierarchy: slide-composition sensitivity
 13 future_reader: future-reader correlation sensitivity
 14 simulations: known-truth and frozen adversarial evaluations
+14a v26_1_calibration: additional frozen M1/M2 correct-specification and secondary cross-model simulations
 15 predictive_validation: target-aligned predictive validation
 16 publication: manuscript tables and figures

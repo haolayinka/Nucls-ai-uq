@@ -1,0 +1,114 @@
+{
+  "protocol_id": "NuCLS-v26.1-Bayesian-evaluation-pre-results-v1-2026-10-15",
+  "status": "frozen_pre_Bayesian_results_inspection",
+  "date": "2026-10-15",
+  "predecessor_freeze_tag": "NuCLS-v26.1-correct-spec-calibration-2026-10-12",
+  "original_frozen_dataset_root_sha256": "783c8539713f4c2c66d19571efd9e92094d5023ec5d481fd9bd0cd7ae422fd22",
+  "definitive_subset_sha256_from_handoff": "49e45bc41916c001d5a5bac13ab79332461cc80005e845831b198b176da0dce6",
+  "design": {
+    "generators": [
+      "M1",
+      "M2"
+    ],
+    "fitted_models": [
+      "M1",
+      "M2"
+    ],
+    "reader_support": [
+      5,
+      10
+    ],
+    "slide_support": [
+      5,
+      10,
+      20
+    ],
+    "scenarios": [
+      "M1_R5_S5",
+      "M1_R5_S10",
+      "M1_R5_S20",
+      "M1_R10_S5",
+      "M1_R10_S10",
+      "M1_R10_S20",
+      "M2_R5_S5",
+      "M2_R5_S10",
+      "M2_R5_S20",
+      "M2_R10_S5",
+      "M2_R10_S10",
+      "M2_R10_S20"
+    ],
+    "replications_per_scenario": 100,
+    "allowed_rep_indices": {
+      "min": 0,
+      "max": 99
+    },
+    "archived_replacements_allowed": false,
+    "n_generated_datasets": 1200,
+    "n_fits": 2400,
+    "chains_per_fit": 4,
+    "n_chains": 9600,
+    "primary_generator_equals_fitted_model": true,
+    "n_primary_fits": 1200,
+    "n_secondary_cross_model_fits": 1200,
+    "n_primary_target_cells": 36,
+    "n_secondary_target_cells": 36,
+    "targets": [
+      "theta_U_selected",
+      "theta_E_selected",
+      "delta_E_minus_U_selected"
+    ]
+  },
+  "sampler": {
+    "tune_per_chain": 2000,
+    "draws_per_chain": 4000,
+    "chains": 4,
+    "target_accept": 0.99
+  },
+  "posterior_summary": {
+    "point": "arithmetic_mean_of_all_postwarmup_draws",
+    "interval_type": "equal_tailed_quantile",
+    "credibility": 0.95,
+    "lower_quantile": 0.025,
+    "upper_quantile": 0.975,
+    "contrast": "within_draw_theta_E_minus_theta_U"
+  },
+  "computational_gate": {
+    "divergences_equal": 0,
+    "max_scalar_rhat_lte": 1.01,
+    "min_scalar_ess_bulk_gte": 400,
+    "min_scalar_ess_tail_gte": 400,
+    "nonfinite_diagnostics_fail": true
+  },
+  "scientific_benchmarks": {
+    "abs_bias_lt": 0.005,
+    "coverage_lower_inclusive": 0.92,
+    "coverage_upper_inclusive": 0.98,
+    "computational_failure_rate_lt": 0.02,
+    "notes": "Benchmarks evaluated for each of 36 correct-specification scenario-target cells with MCSE; no post-hoc threshold changes or pooled-target primary coverage."
+  },
+  "metric_definitions": {
+    "error": "posterior_mean_minus_replication_specific_generator_truth",
+    "bias": "mean(error)",
+    "rmse": "sqrt(mean(error**2))",
+    "coverage": "mean(ci_low<=truth<=ci_high)",
+    "interval_width": "mean(ci_high-ci_low)",
+    "mcse_bias": "sample_std(error,ddof=1)/sqrt(n)",
+    "mcse_coverage": "sqrt(p_hat*(1-p_hat)/n)",
+    "truth_source": "outputs/frozen_data/truth/{scenario}/rep_{rep:03d}.json",
+    "truth_units": "probability",
+    "failure_rate_denominator": 100
+  },
+  "analysis_populations": {
+    "all_integrity_verified_completed": "primary_descriptive_numerical_summary_with_diagnostic_failure_counts",
+    "diagnostic_pass_subset": "separate_diagnostic_qualified_sensitivity",
+    "unavailable_and_corrupt": "explicitly_accounted_without_replacement",
+    "coverage_bounds_for_missing": "[covered_valid/100, (covered_valid+100-n_valid)/100]"
+  },
+  "deliverables": {
+    "main_figure": "bias_and_coverage_36_correct_specification_cells",
+    "main_table": "R5S5_and_R10S20_correct_specification_models",
+    "supplement": "all_72_scenario_fit_target_cells_plus_failures_and_diagnostics"
+  },
+  "changes_must_be_logged": true,
+  "touch_running_production_job": false
+}

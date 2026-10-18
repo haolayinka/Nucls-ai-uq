@@ -38,6 +38,32 @@ The unsuccessful M3 development branch is retained separately under `src/archive
 
 The original NuCLS data are not redistributed in this repository. See `data/README.md` and `checkpoints/README.md` for requirements.
 
+## v26.1 Bayesian calibration and design support
+
+The manuscript is titled *Bayesian Uncertainty Quantification of Breast-Cancer Pathology AI Agreement with a Future Reader: Calibration and Reference-Process Sensitivity*.
+
+The v26.1 extension evaluates Bayesian agreement with a future reader under
+known M1/M2 generating mechanisms. The design fixes 12 scenarios (5 or 10
+readers; 5, 10, or 20 nominal slides), 100 replications per scenario, and the
+same 1,200 simulated datasets for both Bayesian fitted models. The primary
+comparison uses 1,200 matched-model fits; 1,200 cross-model fits form the
+secondary analysis. This extension complements rather than replaces A1–A8.
+
+Posterior computation is assessed using zero divergences, maximum scalar R-hat <= 1.01, and minimum bulk/tail effective sample sizes of
+400. Sampling effort may be increased for the **same simulation replicate and
+unchanged model** until acceptable numerical diagnostics are obtained or a
+persistent computational limitation is documented. Final analysis artifacts
+must record sampler settings and convergence status for reproducibility.
+
+These calibration results are conditional on the investigated reference-process
+models; they do not establish biological truth, a causal effect of AI assistance,
+or calibration under arbitrary misspecification. See
+[`docs/v26_1_calibration_and_reproducibility.md`](docs/v26_1_calibration_and_reproducibility.md)
+for code, design, and computational documentation.
+
+The repository publishes compact scientific outputs, not individual MCMC chains
+or institution-specific computing scripts.
+
 ## Verification
 
 Run:
