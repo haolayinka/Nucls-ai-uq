@@ -1,6 +1,6 @@
 # NuCLS AI UQ
 
-Reproducibility code and publication artifacts for Bayesian uncertainty quantification of breast-cancer pathology AI when reference labels depend on the reader and annotation condition.
+Reproducibility code and publication artifacts for Bayesian Uncertainty Quantification of Breast-Cancer Pathology AI Agreement with a Future Reader: Calibration and Reference-Process Sensitivity.
 
 ## Study aim
 
@@ -40,7 +40,7 @@ The original NuCLS data are not redistributed in this repository. See `data/READ
 
 The manuscript is titled *Bayesian Uncertainty Quantification of Breast-Cancer Pathology AI Agreement with a Future Reader: Calibration and Reference-Process Sensitivity*.
 
-The v26.1 extension evaluates Bayesian agreement with a future reader under
+The extension evaluates Bayesian agreement with a future reader under
 known M1/M2 generating mechanisms. The design fixes 12 scenarios (5 or 10
 readers; 5, 10, or 20 nominal slides), 100 replications per scenario, and the
 same 1,200 simulated datasets for both Bayesian fitted models. The primary
