@@ -36,7 +36,7 @@ The repository includes preprocessing and frame validation, fixed external HoVer
 
 The original NuCLS data are not redistributed in this repository. See `data/README.md` and `checkpoints/README.md` for requirements.
 
-## v26.1 Bayesian calibration and design support
+## Bayesian calibration and design support
 
 The manuscript is titled *Bayesian Uncertainty Quantification of Breast-Cancer Pathology AI Agreement with a Future Reader: Calibration and Reference-Process Sensitivity*.
 
