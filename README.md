@@ -21,9 +21,7 @@ The analysis focuses on agreement between a fixed external pathology AI system a
 
 ## Main analysis components
 
-The repository includes preprocessing and frame validation, fixed external HoVer-Net scoring, paired-reader descriptive analyses, iMRMC benchmarking, Bayesian M1 and M2 models, M4 residual-dependence sensitivity, prior and missingness sensitivity analyses, identification diagnostics, slide-hierarchy and future-reader sensitivity analyses, known-truth and adversarial simulations, predictive validation, and publication-output code.
-
-The unsuccessful M3 development branch is retained separately under `src/archive/m3_failed_validation/` and is not part of the validated main analysis path.
+The repository includes preprocessing and frame validation, fixed external HoVer-Net scoring, paired-reader descriptive analyses, iMRMC benchmarking, Bayesian M1 and M2 models, M3 residual-dependence sensitivity, prior and missingness sensitivity analyses, identification diagnostics, slide-hierarchy and future-reader sensitivity analyses, known-truth and adversarial simulations, predictive validation, and publication-output code.
 
 ## Interpretation limits
 
