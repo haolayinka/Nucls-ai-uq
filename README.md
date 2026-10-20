@@ -1,6 +1,6 @@
 # NuCLS AI UQ
 
-Reproducibility code and publication artifacts for Bayesian uncertainty quantification of breast-cancer pathology AI when reference labels depend on the reader and annotation condition.
+Reproducibility code and publication artifacts for Bayesian Uncertainty Quantification of Breast-Cancer Pathology AI Agreement with a Future Reader: Calibration and Reference-Process Sensitivity.
 
 ## Study aim
 
@@ -21,9 +21,7 @@ The analysis focuses on agreement between a fixed external pathology AI system a
 
 ## Main analysis components
 
-The repository includes preprocessing and frame validation, fixed external HoVer-Net scoring, paired-reader descriptive analyses, iMRMC benchmarking, Bayesian M1 and M2 models, M4 residual-dependence sensitivity, prior and missingness sensitivity analyses, identification diagnostics, slide-hierarchy and future-reader sensitivity analyses, known-truth and adversarial simulations, predictive validation, and publication-output code.
-
-The unsuccessful M3 development branch is retained separately under `src/archive/m3_failed_validation/` and is not part of the validated main analysis path.
+The repository includes preprocessing and frame validation, fixed external HoVer-Net scoring, paired-reader descriptive analyses, iMRMC benchmarking, Bayesian M1 and M2 models, M3 residual-dependence sensitivity, prior and missingness sensitivity analyses, identification diagnostics, slide-hierarchy and future-reader sensitivity analyses, known-truth and adversarial simulations, predictive validation, and publication-output code.
 
 ## Interpretation limits
 
@@ -38,11 +36,11 @@ The unsuccessful M3 development branch is retained separately under `src/archive
 
 The original NuCLS data are not redistributed in this repository. See `data/README.md` and `checkpoints/README.md` for requirements.
 
-## v26.1 Bayesian calibration and design support
+## Bayesian calibration and design support
 
 The manuscript is titled *Bayesian Uncertainty Quantification of Breast-Cancer Pathology AI Agreement with a Future Reader: Calibration and Reference-Process Sensitivity*.
 
-The v26.1 extension evaluates Bayesian agreement with a future reader under
+The extension evaluates Bayesian agreement with a future reader under
 known M1/M2 generating mechanisms. The design fixes 12 scenarios (5 or 10
 readers; 5, 10, or 20 nominal slides), 100 replications per scenario, and the
 same 1,200 simulated datasets for both Bayesian fitted models. The primary
