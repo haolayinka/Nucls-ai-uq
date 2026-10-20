@@ -77,3 +77,26 @@ The SHA-256 manifest covers deterministic CSV and text publication artifacts. By
 ## Documentation
 
 Start with `docs/START_HERE.md`, `docs/analysis_pipeline.md`, and `docs/reproducibility_contract.md`.
+
+## Final v26.1 primary calibration results
+
+The [final 36-cell Bayesian calibration table](outputs/tables/TableS_v26_1_final_primary_calibration.csv)
+reports all three estimands under 12 correctly specified scenarios. All 1,200
+primary model fits meet the scalar convergence criteria, using the original
+posterior fits for 1,181 datasets and longer converged sampling for the same
+remaining 19 datasets (unchanged likelihood, priors, design, and estimands).
+
+Absolute bias is below 0.005 in all 36 cells. Empirical 95% credible-interval
+coverage ranges from **92% to 100%** across 100 replications per cell. In
+33 cells coverage is between 92% and 98%, and in three it is 99%–100%.
+The latter are **above**, not below, the descriptive comparison band; this
+band is not a hard pass/fail test. Higher empirical coverage may indicate
+conservatism and should be interpreted together with interval widths and
+Monte Carlo variability. The supplementary cross-model analysis is distinct
+and is not included in this final primary table.
+
+To regenerate the manuscript's Bayesian calibration graphic from this
+public table, run `python3 src/publication/make_v26_1_primary_calibration_figure.py
+--output Figure5_v26_1_final_primary_Bayesian_calibration.pdf` (requires
+NumPy, pandas, and Matplotlib). The generator plots the nominal 95% coverage
+line without assigning a failure status to coverage above 98%.

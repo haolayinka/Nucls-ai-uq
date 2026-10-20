@@ -59,10 +59,32 @@ This repository intentionally excludes institutional paths, scheduler scripts/lo
 
 ## Publication outputs
 
-The planned public result addition is one compact 72-cell Bayesian
-operating-characteristics table covering the 36 primary and 36 secondary
-scenario–estimand cells, plus only the compact computational metadata required
-to identify the final posterior runs. A publication figure can be included if
-needed for the article and not already reproducibly generated from the table.
-Full replication records, MCMC chains, and machine-specific processing files
-are not distributed in Git.
+The compact final primary results are in
+`outputs/tables/TableS_v26_1_final_primary_calibration.csv` (36 cells,
+12 scenarios by three estimands). The original fixed 1,200 matched-generator
+datasets and fitted models are unchanged. For 1,181 fits the original posterior
+samples were retained; for 19 fits longer converged sampling of the **same**
+model/data was used. All 1,200 final primary fits meet the scalar diagnostic
+gate. Per-fit sampling settings, posterior-source identifiers, original and
+extended diagnostics, and checksums are retained in the computational archive
+rather than publishing large chain files.
+
+All 36 cell absolute biases are below 0.005. Empirical coverage of 95% intervals
+ranges from 92% to 100%; 33/36 rates lie within the 92%–98% **descriptive
+comparison band**, and three are above it (99%, 99%, 100%). Band membership is
+recorded in the frozen output column `coverage_0p92_to_0p98`, but being above
+this band is not coded as a convergence failure or evidence of undercoverage.
+Coverage, interval width and Monte Carlo uncertainty should be assessed jointly.
+No observations were removed or substituted to obtain these rates.
+
+The scientific plotting code
+`src/publication/make_v26_1_primary_calibration_figure.py`
+recreates the primary calibration graphic from the single public CSV. The
+published file uses standard LF line endings; only the line terminators were
+normalized from the archived original final output, not any numeric value.
+
+The 1,200 secondary cross-model fits are distinct from the final primary
+calibration study. After longer sampling, 159 secondary M2-on-M1 fits still
+failed the scalar diagnostic gate; no fully converged cross-model calibration
+claim is made. Full replication records, patient images, posterior draws, and
+institution-specific scheduler details are not published here.
